@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="@dimen/text_min_height"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_password"
+        app:layout_constraintEnd_toStartOf="@id/log_in_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:minHeight="@dimen/text_min_height"
+        android:paddingEnd="@dimen/password_padding"
+        app:layout_constraintEnd_toStartOf="@id/log_in_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_email" />
+
+    <ImageView
+        android:id="@+id/password_show_button"
+        style="@style/password_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:src="@drawable/ic_password_visibility"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_password"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_password"
+        app:layout_constraintTop_toTopOf="@id/edit_text_password" />
+
+    <ImageView
+        android:id="@+id/password_hide_button"
+        style="@style/password_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:src="@drawable/ic_password_visibility_off"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_password"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_password"
+        app:layout_constraintTop_toTopOf="@id/edit_text_password" />
+
+    <TextView
+        android:id="@+id/text_view_error_massage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="@string/error_msg_login_or_password"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_password" />
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/log_in_button_text"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_text_email"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

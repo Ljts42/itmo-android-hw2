@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">hw2-simple-xml</string>
+    <string name="hint_email">Почта</string>
+    <string name="hint_password">Пароль</string>
+    <string name="log_in_button_text">Войти</string>
+    <string name="error_msg_empty_email">Не указана почта</string>
+    <string name="error_msg_empty_password">Не указан пароль</string>
+    <string name="error_msg_email_format">Неправильный формат электронной почты</string>
+    <string name="error_msg_login_or_password">Неправильный логин или пароль</string>
+</resources>

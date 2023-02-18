@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">hw2-simple-xml</string>
+    <string name="hint_email">البريد الإلكتروني</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="log_in_button_text">تسجيل الدخول</string>
+    <string name="error_msg_empty_email">حقل بريد إلكتروني فارغ</string>
+    <string name="error_msg_empty_password">حقل كلمة المرور الفارغة</string>
+    <string name="error_msg_email_format">تنسيق بريد إلكتروني غير صحيح</string>
+    <string name="error_msg_login_or_password">تسجيل الدخول أو كلمة المرور غير صحيحة</string>
+</resources>
